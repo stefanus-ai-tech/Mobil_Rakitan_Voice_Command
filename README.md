@@ -120,7 +120,7 @@ endlegend
 2. **Voice Control**:
    - Audio is recorded in the browser and sent to `NetworkManager`
    - `NetworkManager` buffers the audio and passes it to `GroqClient`
-   - `GroqClient` sends audio to **Whisper**, gets text, sends text to **Llama 3**, and receives a JSON command (e.g., `{"command": "turn_left", "angle": 90}`)
+   - `GroqClient` sends audio to **Whisper**, gets text, sends text to **Llama 4**, and receives a JSON command (e.g., `{"command": "turn_left", "angle": 90}`)
    - `GroqClient` parses the JSON and instructs `MotorControl` to move
 
 3. **Safety Loop**: The `Main` loop constantly polls `MotorControl` for distance data. If an object is too close, it overrides all other commands and stops the robot.
