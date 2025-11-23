@@ -5,7 +5,7 @@ A modular, voice-controlled robot powered by the ESP32 and Groq Cloud AI. This p
 ## 🚀 Key Features
 
 - **Modern ESP32 Core v3.0 Compliance**: Uses the new `ledcAttach` and `ledcWrite` APIs, abandoning deprecated drivers.
-- **AI Voice Control**: Records audio via browser, processes Speech-to-Text (Whisper) and Intent Recognition (Llama 3) via **Groq API**.
+- **AI Voice Control**: Records audio via browser, processes Speech-to-Text (Whisper) and Intent Recognition (Llama 4) via **Groq API**.
 - **Modular Architecture**: Clean separation of concerns using `.h` and `.cpp` files.
 - **Reactive Web UI**: Gamepad-style control and voice recorder hosted directly on the ESP32.
 - **Safety First**: Dedicated obstacle avoidance loop running independently of the web server.
