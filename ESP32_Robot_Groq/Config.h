@@ -22,7 +22,7 @@ const unsigned long TURN_TIMEOUT = 5000;
 const int TURN_PWM = 200;
 
 // API URLs
-const char* whisper_api_url = "https://api.groq.com/openai/v1/audio/transcriptions";
-const char* llama_api_url = "https://api.groq.com/openai/v1/chat/completions";
+#define whisper_api_url "https://api.groq.com/openai/v1/audio/transcriptions"
+#define llama_api_url "https://api.groq.com/openai/v1/chat/completions"
 
 #endif

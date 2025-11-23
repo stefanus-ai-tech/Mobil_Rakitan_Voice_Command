@@ -3,10 +3,10 @@
 #include "GroqClient.h"
 #include "LCDHandler.h"
 
-NetworkManager Network;
+MyNetworkManager myNetwork;
 AsyncWebServer server(80);
 
-void NetworkManager::begin() {
+void MyNetworkManager::begin() {
     WiFi.mode(WIFI_STA);
     WiFi.begin(WIFI_SSID, WIFI_PASS);
     
@@ -40,7 +40,7 @@ void NetworkManager::begin() {
 }
 
 // Handler Audio Upload yang membersihkan logic main
-void NetworkManager::handleUpload(AsyncWebServerRequest *request, String filename, size_t index, uint8_t *data, size_t len, bool final) {
+void MyNetworkManager::handleUpload(AsyncWebServerRequest *request, String filename, size_t index, uint8_t *data, size_t len, bool final) {
     static uint8_t* audioBuffer = NULL;
     static size_t bufferSize = 0;
 

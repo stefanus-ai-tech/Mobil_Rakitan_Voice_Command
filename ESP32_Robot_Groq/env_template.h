@@ -1,9 +1,9 @@
-#ifndef ENV_TEMPLATE_H
-#define ENV_TEMPLATE_H
+#ifndef ENV_H
+#define ENV_H
 
 // Ubah nama file ini menjadi "env.h" dan isi dengan data asli
-const char* WIFI_SSID = "NAMA_WIFI_ANDA";
-const char* WIFI_PASS = "PASSWORD_WIFI_ANDA";
-const char* GROQ_API_KEY = "gsk_API_KEY_GROQ_ANDA";
+#define WIFI_SSID "your_wifi_ssid"
+#define WIFI_PASS "your_wifi_password"
+#define GROQ_API_KEY "your_groq_api_key"
 
 #endif
