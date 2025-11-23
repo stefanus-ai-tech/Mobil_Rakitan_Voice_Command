@@ -185,6 +185,16 @@ Open Arduino IDE and install the following libraries via Library Manager:
 
 ### Voice Control
 
+> **Important**: Modern browsers require HTTPS for microphone access. Since ESP32 serves HTTP, you need to enable insecure origins:
+> 
+> **For Chrome/Edge:**
+> 1. Navigate to `chrome://flags` (or `edge://flags`)
+> 2. Search for "Insecure origins treated as secure"
+> 3. Add `http://<ESP32_IP_ADDRESS>` (e.g., `http://192.168.1.100`)
+> 4. Restart browser
+> 
+> **Alternative**: Access from `http://localhost` if using USB serial bridge
+
 1. Click the microphone button on the web interface
 2. Speak your command (e.g., "move forward", "turn left 90 degrees")
 3. The robot will process your voice command and execute it
