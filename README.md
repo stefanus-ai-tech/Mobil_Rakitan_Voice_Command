@@ -30,7 +30,7 @@ The code is refactored into specific modules to ensure maintainability. Here is 
 | **Env** | `env.h` | **Security**. Stores WiFi credentials and API Keys (Not uploaded to Git). |
 | **Motor** | `MotorControl` | **Hardware Layer**. Handles PWM (LEDC) generation and ultrasonic sensor readings. |
 | **Network** | `NetworkManager` | **Connectivity**. Manages WiFi connection, Web Server, and serving the HTML UI. |
-| **AI** | `GroqClient` | **Intelligence**. Handles HTTPS requests to Groq (Whisper for audio, Llama 3 for logic). |
+| **AI** | `GroqClient` | **Intelligence**. Handles HTTPS requests to Groq (Whisper for audio, Llama 4 for logic). |
 | **Display** | `LCDHandler` | **Feedback**. Provides visual status updates to the user. |
 
 ## 📊 System Architecture
