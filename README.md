@@ -130,8 +130,8 @@ endlegend
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/username/esp32-groq-robot.git
-cd esp32-groq-robot
+git clone https://github.com/stefanus-ai-tech/Mobil_Rakitan_Voice_Command
+cd Mobil_Rakitan_Voice_Command
 ```
 
 ### 2. Configure Environment
